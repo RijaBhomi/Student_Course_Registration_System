@@ -1,0 +1,98 @@
+/* For the welcome message HBox */
+.welcome-box {
+    -fx-background-color: #e6eefc; /* A light, aesthetic blue */
+    -fx-background-radius: 15; /* Rounded corners */
+    -fx-border-color: #b3d9ff; /* A slightly darker blue border */
+    -fx-border-width: 1;
+    -fx-border-radius: 15;
+    -fx-padding: 10 20; /* Vertical and horizontal padding */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 10, 0, 0, 0); /* Subtle shadow */
+}
+
+/* Optional: To make pie chart labels more readable if they overlap */
+.chart-pie-label {
+    -fx-font-size: 10px; /* Adjust as needed */
+    -fx-fill: #333333;
+}
+
+/* Left Navigation Buttons Spacing and Styling */
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #606060; /* Default text color */
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-padding: 10 0 10 15; /* Adjust padding for text/icon alignment */
+    -fx-background-radius: 5; /* Slight rounding */
+}
+
+.nav-button:hover {
+    -fx-background-color: #e0e0e0; /* Light background on hover */
+    -fx-text-fill: #333333; /* Darker text on hover */
+}
+
+.nav-button:pressed {
+    -fx-background-color: #d0d0d0; /* Even darker when pressed */
+}
+
+.nav-button:focused {
+    -fx-focus-color: transparent; /* Remove default JavaFX focus border */
+    -fx-faint-focus-color: transparent;
+}
+
+.nav-button-active {
+    -fx-background-color: #f0f4f8; /* A very light blue to indicate active state */
+    -fx-text-fill: #5d9cec; /* A vibrant blue for the active button text */
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-padding: 10 0 10 15;
+    -fx-background-radius: 5;
+    -fx-border-color: #5d9cec; /* A matching blue border on the left */
+    -fx-border-width: 0 0 0 3;
+}
+
+
+/* New styles for the Profile Page */
+.profile-card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 15, 0, 0, 0);
+}
+
+.form-field {
+    -fx-background-color: #f5f7fa;
+    -fx-background-radius: 5;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+}
+
+.form-field:editable {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #5d9cec;
+}
+
+.edit-button {
+    -fx-background-color: #5d9cec;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-font-weight: bold;
+}
+
+.save-button {
+    -fx-background-color: #4CAF50; /* A green color for saving */
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-font-weight: bold;
+}
+
+.back-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #606060;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.back-button:hover {
+    -fx-text-fill: #333333;
+}

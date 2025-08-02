@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- ADDED: The fx:id attribute is now present to link to the controller's mainPane field -->
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #f5f7fa; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.student_courseregistration_system.controllers.DashboardController">
+    <left>
+        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10 0 0 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 10, 0, 0, 0);">
+            <children>
+                <Region prefHeight="50.0" prefWidth="200.0" />
+                <Button fx:id="dashboardButton" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#handleDashboardClick" prefHeight="40.0" prefWidth="180.0" styleClass="nav-button" text=" Dashboard">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="20.0" />
+                    </VBox.margin>
+                    <graphic>
+                        <Label text="🏠" style="-fx-font-size: 16px;" />
+                    </graphic>
+                </Button>
+                <Button fx:id="profileButton" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#handleProfileClick" prefHeight="40.0" prefWidth="180.0" styleClass="nav-button" text=" Profile">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                    <graphic>
+                        <Label text="👤" style="-fx-font-size: 16px;" />
+                    </graphic>
+                </Button>
+                <Button fx:id="registerCourseButton" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#handleRegisterCourseClick" prefHeight="40.0" prefWidth="180.0" styleClass="nav-button" text=" Register Course">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                    <graphic>
+                        <Label text="➕" style="-fx-font-size: 16px;" />
+                    </graphic>
+                </Button>
+                <Button fx:id="viewCoursesButton" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#handleViewCoursesClick" prefHeight="40.0" prefWidth="180.0" styleClass="nav-button" text=" My Courses">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                    <graphic>
+                        <Label text="📚" style="-fx-font-size: 16px;" />
+                    </graphic>
+                </Button>
+                <Region VBox.vgrow="ALWAYS" />
+                <Button fx:id="logoutButton" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#handleLogoutClick" prefHeight="40.0" prefWidth="180.0" styleClass="nav-button" text=" Logout">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                    </VBox.margin>
+                    <graphic>
+                        <Label text="🚪" style="-fx-font-size: 16px;" />
+                    </graphic>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </VBox>
+    </left>
+    <center>
+        <VBox alignment="TOP_LEFT" prefHeight="200.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+            </padding>
+            <children>
+                <HBox styleClass="welcome-box" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="700.0">
+                    <Label fx:id="welcomeMessageLabel" text="Welcome back, Rija!" textFill="#333333">
+                        <font>
+                            <Font name="System Bold" size="24.0" />
+                        </font>
+                    </Label>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </HBox>
+                <Label text="Registered Courses" textFill="#333333">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="700.0" spacing="20.0">
+                    <VBox alignment="CENTER" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #e6eefc; -fx-background-radius: 10; -fx-border-color: #b3d9ff; -fx-border-radius: 10; -fx-border-width: 1;">
+                        <children>
+                            <Label text="Machine Learning" textFill="#333333">
+                                <font>
+                                    <Font name="System Bold" size="14.0" />
+                                </font>
+                            </Label>
+                            <Label text="10 Files" textFill="#606060" />
+                            <Label text="Professor: Bidhan Sir" textFill="#606060" />
+                        </children>
+                    </VBox>
+                    <VBox alignment="CENTER" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #e6f9ed; -fx-background-radius: 10; -fx-border-color: #c0f0d0; -fx-border-radius: 10; -fx-border-width: 1;">
+                        <children>
+                            <Label text="Data Mining" textFill="#333333">
+                                <font>
+                                    <Font name="System Bold" size="14.0" />
+                                </font>
+                            </Label>
+                            <Label text="12 Files" textFill="#606060" />
+                            <Label text="Professor: Dipshan Sir" textFill="#606060" />
+                        </children>
+                    </VBox>
+                    <VBox alignment="CENTER" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #fff0f5; -fx-background-radius: 10; -fx-border-color: #ffb6c1; -fx-border-radius: 10; -fx-border-width: 1;">
+                        <children>
+                            <Label text="Advanced Programming" textFill="#333333">
+                                <font>
+                                    <Font name="System Bold" size="14.0" />
+                                </font>
+                            </Label>
+                            <Label text="16 Files" textFill="#606060" />
+                            <Label text="Professor: Subit Sir" textFill="#606060" />
+                        </children>
+                    </VBox>
+                    <Region HBox.hgrow="ALWAYS" />
+                    <Button mnemonicParsing="false" onAction="#handleViewAllCourses" text="View All &gt;">
+                        <style>-fx-background-color: transparent; -fx-text-fill: #5d9cec; -fx-font-size: 14px; -fx-cursor: hand;</style>
+                    </Button>
+                </HBox>
+
+                <Label text="Course Progress Summary" textFill="#333333">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox alignment="CENTER_LEFT" spacing="50.0" prefWidth="700.0">
+                    <children>
+                        <PieChart fx:id="courseProgressChart" prefHeight="300.0" prefWidth="350.0" title="Course Enrollment" /> <VBox alignment="CENTER_LEFT" spacing="10.0">
+                        <children>
+                            <Label text="Total Courses: 5" style="-fx-font-weight: bold;" />
+                            <Label text="Registered Courses: 3" />
+                            <Label text="Available Courses: 2" />
+                            <Label text="Courses Completed: 1" />
+                            <Label text="Courses In Progress: 2" />
+                        </children>
+                    </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+    <right>
+        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="250.0" spacing="20.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0 10 10 0; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 10, 0, 0, 0);">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="30.0" />
+            </padding>
+            <children>
+                <ImageView fx:id="profileImageView" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-color: #5d9cec; -fx-border-width: 3; -fx-border-radius: 60; -fx-background-radius: 60;">
+                </ImageView>
+                <Label fx:id="studentNameLabel" text="Rija Bhomi" textFill="#333333">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label text="Student" textFill="#606060">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Label>
+                <Button mnemonicParsing="false" onAction="#handleProfileClick" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #5d9cec; -fx-text-fill: white; -fx-background-radius: 5;" text="Profile" />
+                <Region VBox.vgrow="ALWAYS" />
+                <VBox fx:id="calendarContainer" alignment="CENTER" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #e6eefc; -fx-background-radius: 10; -fx-padding: 15;">
+                    <children>
+                        <Label text="December 2025" textFill="#333333">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label text="[Calendar placeholder]" textFill="#606060" />
+                    </children>
+                </VBox>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </VBox>
+    </right>
+</BorderPane>
