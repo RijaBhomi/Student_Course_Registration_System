@@ -21,25 +21,6 @@ FXML: For declarative UI layout.
 
 CSS: For styling the application's appearance.
 
-Project Structure
-The project follows a standard Maven or Gradle structure for JavaFX applications.
-
-├── src
-│   ├── main
-│   │   ├── java
-│   │   │   └── com.example.student_courseregistration_system
-│   │   │       ├── controllers  # Contains all the FXML controllers (e.g., DashboardController)
-│   │   │       ├── models       # Contains data model classes (e.g., Student, Course)
-│   │   │       └── utils        # Contains utility classes for file I/O (e.g., DataManager)
-│   │   └── resources
-│   │       └── com.example.student_courseregistration_system
-│   │           ├── *.fxml       # All FXML layout files
-│   │           ├── styles.css   # Main CSS file for styling
-│   │           └── profilePic.jpeg  # Example image asset
-├── pom.xml                      # Maven project configuration
-├── all_courses.txt              # File containing all available courses
-└── registered_courses.txt       # File containing a list of registered courses for persistence
-
 Getting Started
 Prerequisites
 Java Development Kit (JDK) 11 or higher
