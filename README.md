@@ -10,16 +10,16 @@ This is a desktop application built with JavaFX that provides a simple and intui
 -   **Course Persistence**: Course registration data is saved to a file, so it persists between application runs.
 -   **Navigation**: A responsive sidebar for easy navigation between different sections of the application.
 
-![LoginPage Screenshot]("C:\Users\Admin\Documents\loginnnnnnnnnn.png")
+![LoginPage Screenshot](screenshots/loginnnnnnnnnn.png)  
 _A screenshot of the login page._
 
-![Dashboard Screenshot]("C:\Users\Admin\Documents\dashboardd.png")
+![Dashboard Screenshot](screenshots/dashboardd.png)  
 _A screenshot of the main dashboard._
 
-![RegisterCourse Screenshot]("C:\Users\Admin\Documents\Registercourseeeeeeeeee.png")
+![RegisterCourse Screenshot](screenshots/Registercourseeeeeeeeee.png)  
 _A screenshot of the register courses._
 
-![ViewCourses Screenshot]("C:\Users\Admin\Documents\Mycourse.png")
+![ViewCourses Screenshot](screenshots/Mycourse.png)  
 _A screenshot of the registered courses._
 
 ## Technologies Used
