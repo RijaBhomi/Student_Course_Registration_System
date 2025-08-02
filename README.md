@@ -20,30 +20,6 @@ This is a desktop application built with JavaFX that provides a simple and intui
 Here is the content for the `README.md` file. You can copy and paste this directly.
 
 ```markdown
-# Student Course Registration System
-
-This is a desktop application built with JavaFX that provides a simple and intuitive interface for students to manage their course registrations. The system allows students to view their profile, register for new courses, remove existing ones, and see an overview of their academic progress.
-
-## Features
-
--   **Student Dashboard**: A central hub with a welcome message and a summary of the student's course status using a pie chart.
--   **Profile Management**: A dedicated page to view and potentially edit student profile information.
--   **Course Registration**: An interface to register and unregister from available courses.
--   **Course Persistence**: Course registration data is saved to a file, so it persists between application runs.
--   **Navigation**: A responsive sidebar for easy navigation between different sections of the application.
-
-## Technologies Used
-
--   **JavaFX**: For building the graphical user interface.
--   **Java**: The core programming language.
--   **FXML**: For declarative UI layout.
--   **CSS**: For styling the application's appearance.
-
-## Project Structure
-
-The project follows a standard Maven or Gradle structure for JavaFX applications.
-
-```
 
 ├── src
 │   ├── main
@@ -60,8 +36,7 @@ The project follows a standard Maven or Gradle structure for JavaFX applications
 ├── pom.xml                      \# Maven project configuration
 ├── all\_courses.txt              \# File containing all available courses
 └── registered\_courses.txt       \# File containing a list of registered courses for persistence
-
-
+```
 ## Getting Started
 
 ### Prerequisites
